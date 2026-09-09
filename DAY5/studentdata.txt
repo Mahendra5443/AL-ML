@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Mahendra Singh",
+        "age": 23
+    },
+    {
+        "name": "raj",
+        "age": 21
+    },
+    {
+        "name": "kush",
+        "age": 24
+    }
+]
