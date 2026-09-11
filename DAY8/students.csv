@@ -1,0 +1,9 @@
+id,name,department,marks,attendance,grade
+101,Aarav,CSE,85.0,92,A
+102,Ananya,ECE,62.0,80,B
+103,Rohan,CSE,,75,C
+104,Priya,ME,91.0,95,A
+105,Kabir,ECE,48.0,,F
+106,Neha,CSE,76.0,88,B
+107,Siddharth,ME,,70,D
+108,Isha,ECE,88.0,91,A
