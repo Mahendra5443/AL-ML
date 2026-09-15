@@ -11,3 +11,5 @@ df = pd.DataFrame({
 df["salaryExperienceRatio"]=df["salary"]/df["experience"]
 meanOfSalaryExperienceRatio = df["salaryExperienceRatio"].mean()
 STDOfSalaryExperienceRatio = df["salaryExperienceRatio"].std()
+print(STDOfSalaryExperienceRatio)
+print(df.describe())
