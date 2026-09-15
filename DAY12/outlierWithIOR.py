@@ -1,5 +1,5 @@
 import numpy as np
-x = np.array([10,20,30,40,50,60,70,80,90,100])
+x = np.array([10,20,30,40,50,60,70,80,90,100,1000])
 Q1 = np.percentile(x,25)
 Q2 = np.percentile(x,50)
 Q3 = np.percentile(x,75)
@@ -10,12 +10,11 @@ print(Q1)
 print(Q2)
 #IQR
 print(IQR)
-
 #lower IQR bound
-print((Q1-1.5*IQR))
-
+lower =(Q1-1.5*IQR)
+print(lower)
 #upper IQR bound
-print((Q1+1.5*IQR))
-
+upper= (Q3+1.5*IQR)
+print(upper)
 #outlier 
-print(x[x>(Q3+1.5*IQR)])
+print(x[~((x>lower)&(x<upper))])
