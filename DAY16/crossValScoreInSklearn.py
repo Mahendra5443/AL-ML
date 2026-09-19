@@ -25,7 +25,7 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
 
 # 3. Cross Validation SIRF X_train par chalayein
-scores = cross_val_score(model, X_train, y_train, cv=cv, scoring="accuracy")
+scores = cross_val_score(model, X_train, y_train, cv=cv, scoring="accuracy") # scoring = precision/recall/f1 score/ roc_auc
 
 print("Fold Scores:", scores)
 print("CV Mean Accuracy:", scores.mean())
